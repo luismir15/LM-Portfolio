@@ -1,0 +1,76 @@
+---
+import MainHead from '../components/MainHead.astro';
+import Footer from '../components/Footer.astro';
+import Nav from '../components/Nav.astro';
+---
+
+<html lang="en">
+	<head>
+		<MainHead title="About | Jeanine White" description="About Jeanine White Lorem Ipsum" />
+		<style>
+			.heroImg {
+				max-height: 24rem;
+				object-fit: cover;
+				overflow: hidden;
+			}
+
+			.heroImg img {
+				width: 100%;
+			}
+
+			.bio {
+				font-size: var(--f-u1);
+				line-height: 2;
+				margin-top: 4em;
+			}
+
+			.wrapper.bio {
+				max-width: 50em;
+			}
+		</style>
+	</head>
+	<body>
+		<Nav />
+		<div class="wrapper">
+			<h1>About Me</h1>
+			<div class="heroImg">
+				<img
+					width="1400"
+					height="350"
+					src="https://images.unsplash.com/photo-1581977012607-4091712d36f9?auto=format&fit=crop&w=1400&h=350&q=75"
+				/>
+			</div>
+			<div class="bio wrapper">
+				<p>
+					Hello! My complete name is Luis Benjamin Miranda Tollinchi. I was born and raised in Puert Rico.
+					I have always been fascinated with technology and building things. In 2017 I made the decision 
+					to persue a  degree in Computer Science in Miami. I enrolled at Florida International University.
+				</p>
+				<p>
+					I had a wonderfull time while at FIU. I made a lot of friends and gained a solid foundation in 
+					Computer Science concept and programming skills. I participated in various projects and research. 
+					I also joined the UPE chapter where I would participate in various workshops and semester long projects.
+					In 2020 I gratuaded, earning my college degree.
+				</p>
+				<p>
+					My first professional job came in my time with Revature. I underwent an intense 10 week traning going
+					over all the full stack of a Software Engineer. I was placed in a Java batch, which the main frameworks
+					were Spring and Angular. After the traning was over, I luckily got picked up pretty quick by one of their
+					client to be a contractor, Cognizant. 
+				</p>
+				<p>
+					While my time at Cognizant, I was placed in a Backend role for Anthem. I mainly handle various microservice
+					and my day to day was implementing new features, enhancing performance and fixing bugs. The main tech stack
+					was Spring and MongoDB so I felt comfortable working with Java again. 
+				</p>
+				<p>
+					Now you can find me hanging out at PilotoMail, a mail management software application. This is a fairly new
+					project for an existing company, so it's kinda like a start up. The most integruing part of this new experience
+					is getting out of my comfort zone. This new role envolves everything in JavaScript, which is the opposite of
+					Java. But, I'm happy with my role and team. Looking forward for tomorrows new challenges. 
+				</p>
+			</div>
+		</div>
+		<Footer />
+	</body>
+</html>
